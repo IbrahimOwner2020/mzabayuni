@@ -17,7 +17,7 @@ const Navigation = () => {
                 <div className={`w-7 h-0.5 bg-black rounded duration-300 my-1.5 ${sideNav ? 'transform rotate-45 duration-300 -mt-0.5' : ''}`}></div>
             </button>
             {sideNav ? (
-                <div className="sm:hidden absolute top-0 left-0 w-screen h-screen bg-primary z-20">
+                <div className="sm:hidden fixed top-0 left-0 w-screen h-screen bg-primary z-20">
                     <ul className={`absolute left-1/2 transition-all duration-300 transform -translate-x-1/2 ${sideNav ? 'top-1/4' : 'opacity-0'}`}>
                         <li className="my-6">
                             <Link href="/resume">
