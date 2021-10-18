@@ -1,6 +1,4 @@
 import React from 'react';
-import twitter from '../images/twitter.svg';
-import linkedin from '../images/linkedin.svg';
 import Img from 'next/image';
 
 const Footer = () => {
@@ -20,10 +18,10 @@ const Footer = () => {
                     <h2 className="font-bold text-xl mb-1">Follow Me</h2>
                     <div>
                         <a className="mr-2" href="https://www.linkedin.com/in/jeremiah-keneth-142942203/">
-                            <Img className="w-6 h-6" src={linkedin} alt="linkedin icon" />
+                            <Img width={24} height={24} src="/linkedin.svg" alt="linkedin icon" />
                         </a>
                         <a className="mr-1" href="https://twitter.com/mzabayuni">
-                            <Img className="w-6 h-6" src={twitter} alt="twitter icon" />
+                            <Img width={24} height={24} src="/twitter.svg" alt="twitter icon" />
                         </a>
                     </div>
                 </div>

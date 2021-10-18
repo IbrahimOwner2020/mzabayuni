@@ -3,20 +3,19 @@ import Head from 'next/head'
 import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '../src/components/Layout'
-import mzabayuni from '../src/images/mzabayuni.jpeg';
 
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
         <title>Home | Mzabayuni</title>
-        <meta name="description" content="Personal portfoli for Jeremiah Kenneth" />
+        <meta name="description" content="Personal portfolio for Jeremiah Kenneth" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className="bg-primary">
         <Layout>
-          <div className="md:my-20 grid grid-cols-1 gap-4 lg:grid-cols-2">
+          <div className="max-w-5xl mx-auto md:my-20 grid grid-cols-1 gap-4 lg:grid-cols-2">
             <div className="mx-4 my-8 lg:col-start-2 lg:self-center">
               <h1 className="text-5xl lg:text-6xl mb-3 lg:mb-8 font-semibold">Hello</h1>
               <h3 className="text-xl mb-1 font-semibold">Am Jeremiah</h3>
@@ -40,7 +39,7 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className="m-4 mb-8 lg:col-start-1 lg:row-start-1 lg:mb-2 lg:w-96 lg:justify-self-end">
-              <Image className="rounded-full" src={mzabayuni} alt="Mzabayuni" />
+              <Image className="rounded-full" src="/mzabayuni.jpeg" width="500" height="500" alt="Mzabayuni" />
             </div>
           </div>
         </Layout>
