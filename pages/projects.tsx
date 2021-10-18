@@ -33,8 +33,8 @@ const Projects = () => {
                 <div className="max-w-5xl lg:mx-auto mx-4 my-6 lg:my-20">
                     <h1 className="font-bold text-3xl lg:text-5xl mb-6 lg:mb-12">Projects</h1>
                     <div>
-                        {projectsData.map(data => (
-                            <Project data={data}/>
+                        {projectsData.map((data, index) => (
+                            <Project data={data} key={index} />
                         ))}
                     </div>
                 </div>

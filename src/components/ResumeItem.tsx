@@ -7,14 +7,14 @@ const ResumeItem = ({ data }) => {
                 <h2 className="text-xl font-bold mb-6 mt-10 sm:mt-0">{data.title}</h2>
                 {data.list ? (
                     <ul className="list-disc justify-self-center">
-                        {data.details.map(detail => (
-                            <li className="my-1 ml-6 sm:ml-0"><span className="font-light">{detail}</span></li>
+                        {data.details.map((detail, index) => (
+                            <li key={index} className="my-1 ml-6 sm:ml-0"><span className="font-light">{detail}</span></li>
                         ))}
                     </ul>
                 ) : (
                     <div>
-                        {data.details.map(detail => (
-                            <div className="lg:flex items-start mb-12">
+                        {data.details.map((detail, index) => (
+                            <div key={index} className="lg:flex items-start mb-12">
                                 <div className="lg:w-1/4">
                                     <p className="font-light lg:mr-4 lg:w-1/4">{detail.startYear}&#8209;{detail.endYear}</p>
                                 </div>

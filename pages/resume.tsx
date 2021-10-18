@@ -62,8 +62,8 @@ const Resume = () => {
                 <div className="my-6 lg:my-20">
                     <h1 className="mx-4 lg:mx-0 max-w-5xl lg:mx-auto font-bold text-3xl lg:text-5xl mb-6 lg:mb-12">Resume</h1>
                     <div>
-                        {data.map(data => (
-                            <ResumeItem data={data} />
+                        {data.map((data, index) => (
+                            <ResumeItem data={data} key={index} />
                         ))}
                     </div>
                 </div>
