@@ -18,7 +18,7 @@ const Home: NextPage = () => {
           <div className="max-w-5xl mx-auto md:my-20 grid grid-cols-1 gap-4 lg:grid-cols-2">
             <div className="mx-4 my-8 lg:col-start-2 lg:self-center">
               <h1 className="text-5xl lg:text-6xl mb-3 lg:mb-8 font-semibold">Hello</h1>
-              <h3 className="text-xl mb-1 font-semibold">Am Jeremiah</h3>
+              <h3 className="text-xl mb-1 font-semibold">Am Jeremiah Kenneth</h3>
               <p className="font-light text-base max-w-sm">Web designer baased in Figma, HTML & CSS and a little in Javascript</p>
               <div className="mt-4 flex items-center justify-between sm:justify-start">
                 <Link href="/resume">
