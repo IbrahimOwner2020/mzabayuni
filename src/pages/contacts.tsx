@@ -56,7 +56,7 @@ const Contacts = () => {
                                 const { error } = await res.json();
                                 if (error) {
                                     console.log(error);
-                                    toast("Contact submition successfully!")
+                                    toast(error)
                                     return;
                                 }
                             })}
