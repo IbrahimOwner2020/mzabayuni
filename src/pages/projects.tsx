@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Layout from '../src/components/Layout';
-import Project from '../src/components/Project';
+import Layout from '../components/Layout';
+import Project from '../components/Project';
 
 const projectsData = [
     {
